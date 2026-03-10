@@ -27,22 +27,20 @@
     background-color: #fff;
     border: none;
     box-shadow: 1px 1px 5px #bebebe;
-    margin-top: 0;
     pointer-events: none;
     transition: all 0.5s ease;  
 }
 
-.feature__card-button .fa-solid {
-    font-size: 1rem;
-    margin-bottom: 0;
-    color: #005eff !important;
-}
-
-.features__card:hover .feature__card-button {
+.feature__card:hover .feature__card-button {
     opacity: 1;
     pointer-events: auto;
     cursor: pointer;
-    bottom: 30px;
+    bottom: 15px;
+}
+
+.feature__card-button .fa-solid {
+    font-size: 1rem;
+    color: #005eff !important;
 }
 
 .company__card-button {
