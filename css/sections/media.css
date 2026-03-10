@@ -1,0 +1,133 @@
+@media (max-width: 657px) {
+
+
+    .header {
+        height: 100px;
+    }
+    .header__icons .fa-x {
+        display: none;
+    }
+
+    #menu:checked  ~ .header__nav {
+        position: absolute;
+        top: 69px;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: rgba (0, 0, 0, 0.3);
+        display: block;
+    }
+
+    #menu:checked ~  .header__top .fa-x {
+        display: block;
+    } 
+
+     #menu:checked ~  .header__top .fa-bars {
+        display: none;
+    } 
+
+    .header__nav {
+        display: none
+    }
+
+    .header__nav-item::after,
+    .header__nav-item::before {
+        display: nome;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero{
+        height: 195vh;
+    }
+
+    .features{
+        bottom: -200px;
+    }
+
+    .why__us{
+        padding-top: 225px;
+    }
+    .features__list {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .about__container {
+        grid-template: repeat(2, 1fr) / 1fr;
+    }
+
+    .company__container {
+        grid-template: repeat(3, 1fr) / 1fr;
+    }
+
+    .services__container {
+        grid-template: repeat(6, 1fr) / 1fr;
+    }
+
+    .services__main p {
+        width: 100%;
+    }
+}
+
+/* 658px até 920px */
+@media (min-width:658px) and (max-width:920px) {
+
+    .header{
+        padding: 30px 10%;
+    }
+
+      .hero{
+        height: 150vh;
+    }
+
+     .features{
+        bottom: -200px;
+    }
+
+    .why__us{
+        padding-top: 225px;
+    }
+
+    .features__list {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .about,
+    .about__content{
+        padding: 25px;
+    }
+
+
+    .about__image::before {
+        bottom: 65px;
+        right: 45px;
+    }
+
+       .about__image::after {
+        bottom: 45px;
+        right: 75px;
+    }
+
+
+    .company__main{
+        /* grid-area: inicioLinha / inicioColuna / fimLinha / fimColuna */
+        grid-area: 1 / 1/ 2/ 3;
+    }
+
+    .company__container {
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+
+    .services__container {
+        grid-template: repeat(3, 1fr)/ repeat(2, 1fr);
+    }
+
+
+}
+
+
